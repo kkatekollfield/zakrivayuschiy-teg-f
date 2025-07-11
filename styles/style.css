@@ -35,10 +35,12 @@
   margin-block: 100px;
 }
 
-.content__card {
-  display: grid;
+.card {
+  /* display: grid; */
   /* margin: 0 auto; */
   /* margin-inline: 0; */
+  display: flex;
+  flex-direction: column;
   width: clamp(375px, var(--card-width, 100%), 700px);
   background-color: var(--bg-color, rgba(255, 255, 255, 1));
   border: 2px solid var(--border-color, rgba(0, 0, 0, 1));
@@ -69,27 +71,86 @@
 
 .main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 52px;
+  justify-content: space-around;
 }
 
-.content__title {
-  display: inline-flex;
+.card__title {
   font-variation-settings: 'wght' var(--font-weight-title, 700);
   font-size: inherit;
   line-height: 110%;
   padding-inline: 10px;
-  padding-block-start: 3px;
-  padding-block-end: clamp(0.34375rem, 0.3988rem + -0.2347vw, 0.1875rem);
-  align-items: center;
+  padding-block: 3px 5px;
   max-width: clamp(21.9375rem, 15.0933rem + 29.2019vw, 41.375rem);
 }
 
-.content__text {
+.card__text {
   display: grid;
   gap: 27px;
-  max-width: 646px;
   padding: 25px;
+  font-size: inherit;
+  line-height: 21px;
 }
 
-.content__image {
-  
+.card__image {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: 100%;
+  max-block-size: 100%;
+}
+
+.card__container-buttons {
+ display: flex;
+ justify-content: flex-end;
+ margin-block-end: 25px;
+ margin-inline-end: 25px;
+}
+
+.button {
+  border: 2px solid var(--border-color, rgba(0, 0, 0, 1));
+  font-family: var(--accent-font, serif);
+  font-size: var(--button-font-size, 14px);
+}
+
+.card__icon-button {
+  align-self: flex-end;
+  border: 2px solid transparent;
+  padding-block: 7px 3px;
+  padding-inline: 0 10px;
+}
+
+.card__like-button {
+  min-inline-size: 130px;
+  align-self: flex-end;
+  padding-block: 10.5px;
+  padding-inline: 37px;
+  line-height: 90%;
+}
+
+.save-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-block: 13px;
+  padding-inline: 18px;
+  gap: 8px;
+  line-height: 100%;
+  /* inline-size: 335px; */
+  inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+}
+
+.floppy-icon {
+  /* flex-basis: 28px; */
+  flex-basis: 21px;
+  flex-grow: 1;
+  inline-size: clamp(1.75rem, 1.904rem - 0.6573vw, 1.3125rem);
+  block-size: clamp(1.75rem, 1.904rem - 0.6573vw, 1.3125rem);
+}
+
+.save-button .button__text {
+  flex-basis: 266px;
+  align-self: flex-center;
 }

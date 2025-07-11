@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" href="./images/mobile-icon.png" type="image/png">
   </head>
   <body class="page">
-    <header class="header content__card">
+    <header class="header card">
       <h1 class="header__logo">&lt;/html&gt;</h1>
       <div class="header__text">
         <p>
@@ -26,14 +26,14 @@
       </div>
     </header>
     <main class="main">
-      <section class="content__card">
-        <h2 class="content__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+      <section class="card">
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
         <picture>
           <source srcset="images/bus.webp" media="(max-width: 768px)" type="image/webp">
           <source srcset="images/bus.png">
-          <img src="images/bus.png" alt="Автобус на колесах едет по ночной дороге" class="content__image">
+          <img src="images/bus.png" alt="Автобус на колесах едет по ночной дороге" class="card__image">
         </picture>
-        <div class="content__text">
+        <div class="card__text">
           <p>
             Это было самое начало пути. На этом этапе важно 
             было проникнуться основами и настроиться на учёбу. 
@@ -44,19 +44,30 @@
             Место для ваших воспоминаний о начале обучения.
           </p>
         </div>
-        <button type="button" class="content__like-button">
-          <span>
-            <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="card__container-buttons">
+          <button class="button card__icon-button">
+            <svg class="like-icon" width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path 
               d="M6 0H3v3h3V0ZM9 0H6v3h3V0ZM3 3H0v3h3V3ZM3 6H0v3h3V6ZM3 9H0v3h3V9ZM12 0H9v3h3V0ZM6 12H3v3h3v-3ZM9 15H6v3h3v-3ZM12 18H9v3h3v-3ZM21 0h3v3h-3V0ZM18 0h3v3h-3V0ZM24 3h3v3h-3V3ZM24 6h3v3h-3V6ZM24 9h3v3h-3V9ZM15 0h3v3h-3V0ZM21 12h3v3h-3v-3ZM18 15h3v3h-3v-3ZM15 18h3v3h-3v-3ZM15 3h-3v3h3V3ZM15 21h-3v3h3v-3Z" 
               fill="black"
               />
             </svg>
-          Like
-          </span>
-        </button>
+          </button>
+          <button type="button" class="button card__like-button">
+            <span class="button__text">
+              Like
+            </span>
+          </button>
+        </div>
       </section>
-
+      <button type="submit" class="button save-button">
+        <svg class="floppy-icon">
+          <use href="./svg/floppy.svg#floppy-icon"></use>
+        </svg>
+        <span class="button__text">
+          Сохранить на память
+        </span>
+      </button>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
