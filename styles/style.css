@@ -21,6 +21,18 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   background-color: var(--bg-color, rgba(255, 255, 255, 1));
+  /* background-image: var(--bg-image, url(../images/cover-image.png)); */
+  /* background-image: repeating-linear-gradient(#d3d3d3 2px, transparent 2px); */
+  background-image: var(--bg-image, 
+  repeating-linear-gradient(#d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+  repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+  linear-gradient(#e7e7e7 0, #e7e7e7 0,01%, #1a1a1a));
+  /* repeating-linear-gradient(90deg, #d3d3d3 2px, transparent 2px 4px); */
+  /* background-repeat: no-repeat;
+  background-position: center; */
+  background-size: cover;
+  /* background-attachment: fixed; */
+
   font-family: var(--main-font, sans-serif);
   font-size: var(--body-font-size, 18px);
   line-height: var(--line-height, 21px);
@@ -187,6 +199,7 @@
 }
 
 .save-button {
+  background-color: var(--bg-color, rgba(255, 255, 255, 1));
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -234,7 +247,7 @@ dialog[open] {
   /* inline-size: clamp(341px, 90%, 357px); */
   /* max-inline-size: 90%; */
   /* padding-inline: clamp(2.625rem, 2.8891rem - 1.1268vw, 1.875rem); */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* dialog:not([open]) {
