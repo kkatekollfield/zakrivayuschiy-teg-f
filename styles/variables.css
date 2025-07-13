@@ -7,6 +7,7 @@
   repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
   linear-gradient(#e7e7e7 0, #e7e7e7 0,01%, #1a1a1a);
   --border-color: rgba(0, 0, 0, 1);
+  --accent-color: rgba(0, 0, 0, 1);
 
   --main-font: 'Inter-Variable', sans-serif;
   --accent-font: 'PressStart2P', serif;
@@ -14,6 +15,7 @@
   --font-weight-title: 700;
   --body-font-size: 18px;
   --button-font-size: 14px;
+  --button-text-color: rgba(255, 255, 255, 1);
   --watermark-font-size: 14px;
   --watermark-shadow-color: rgba(255, 255, 255, 0.5);
   --line-height: 21px;

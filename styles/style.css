@@ -88,6 +88,7 @@
   align-items: center;
   gap: 52px;
   justify-content: space-around;
+  margin-block-end: 100px;
 }
 
 .card__title {
@@ -177,24 +178,67 @@
 }
 
 .button {
+  position: relative;
   border: 2px solid var(--border-color, rgba(0, 0, 0, 1));
   font-family: var(--accent-font, serif);
   font-size: var(--button-font-size, 14px);
   cursor: pointer;
+  background-color: var(--bg-color, rgba(255, 255, 255, 1));
+}
+
+/* @keyframes shadow {
+  from {
+    box-shadow: none;
+  }
+
+  to {
+    box-shadow: 2px 2px var(--accent-color, rgba(0, 0, 0, 1));
+  }
+} */
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* top: 0;
+  bottom: 0; */
+  background-color: var(--accent-color, rgba(0, 0, 0, 1));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px var(--accent-color, rgba(0, 0, 0, 1));
+  transition: box-shadow 0.3s ease;
+}
+
+.button:hover::before {
+  transform: scaleX(100%);
+}
+
+.button__text {
+  color: var(--button-text-color, rgba(255, 255, 255, 1));
+  mix-blend-mode: difference;
+  z-index: 1;
 }
 
 .card__icon-button {
   align-self: flex-end;
-  border: 2px solid transparent;
+  /* border: 2px solid transparent; */
   padding-block: 7px 3px;
   padding-inline: 0 10px;
+  cursor: pointer;
+}
+
+.card__icon-button:focus-visible {
+  /* box-shadow: none; */
 }
 
 .card__like-button {
-  min-inline-size: 130px;
+  inline-size: 130px;
   align-self: flex-end;
   padding-block: 10.5px;
-  padding-inline: 37px;
   line-height: 90%;
 }
 
@@ -210,18 +254,23 @@
   line-height: 100%;
   /* inline-size: 335px; */
   inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  color: var(--button-text-color, rgba(255, 255, 255, 1));
+  /* mix-blend-mode: difference; */
+  z-index: 1;
 }
 
 .floppy-icon {
+  fill: var(--button-text-color, rgba(255, 255, 255, 1));
   flex-basis: 21px;
   flex-grow: 1;
   inline-size: clamp(1.75rem, 1.904rem - 0.6573vw, 1.3125rem);
   block-size: clamp(1.75rem, 1.904rem - 0.6573vw, 1.3125rem);
+  mix-blend-mode: difference;
 }
 
 .save-button .button__text {
   flex-basis: 266px;
-  align-self: flex-center;
+  /* align-self: flex-center; */
 }
 
 dialog {
