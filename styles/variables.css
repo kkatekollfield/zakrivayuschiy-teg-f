@@ -2,35 +2,35 @@
 в исходном состоянии, а так же их изменения в зависимости 
 от ширины устройства */
 :root {
-  --bg-color: rgba(255, 255, 255, 1);
-  --bg-image: repeating-linear-gradient(#d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
-              repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
-              linear-gradient(#e7e7e7 0, #e7e7e7 0,01%, #1a1a1a);
-  --border-color: rgba(0, 0, 0, 1);
-  --accent-color: rgba(0, 0, 0, 1);
+    --bg-color: rgba(255, 255, 255, 1);
+    --bg-image: repeating-linear-gradient(#d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+        repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+        linear-gradient(#e7e7e7 0, #e7e7e7 0, 01%, #1a1a1a);
+    --border-color: rgba(0, 0, 0, 1);
+    --accent-color: rgba(0, 0, 0, 1);
 
-  --font-color: rgba(0, 0, 0, 1);
-  --main-font: 'Inter-Variable', sans-serif;
-  --accent-font: 'PressStart2P', serif;
-  --body-font-size: 18px;
-  --line-height: 21px;
-  --font-weight-main: 400;
-  --font-weight-title: 700;
+    --font-color: rgba(0, 0, 0, 1);
+    --main-font: 'Inter-Variable', sans-serif;
+    --accent-font: 'PressStart2P', serif;
+    --body-font-size: 18px;
+    --line-height: 21px;
+    --font-weight-main: 400;
+    --font-weight-title: 700;
 
-  --card-width: 100%;
-  --card-color: rgba(255, 255, 255, 1);
+    --card-width: 100%;
+    --card-color: rgba(255, 255, 255, 1);
 
-  --watermark-font-size: 14px;
-  --watermark-shadow: 1px 0 rgba(255, 255, 255, 0.5),
-                      0 1px rgba(255, 255, 255, 0.5),
-                      -1px 0 rgba(255, 255, 255, 0.5),
-                      0 -1px rgba(255, 255, 255, 0.5);
-  --watermark-stroke: 1px rgba(255, 255, 255, 0.5);
-  
-  --button-font-size: 14px;
-  --button-text-color: rgba(255, 255, 255, 1);
-  --button-color: rgba(255, 255, 255, 1);
+    --watermark-font-size: 14px;
+    --watermark-shadow: 1px 0 rgba(255, 255, 255, 0.5),
+        0 1px rgba(255, 255, 255, 0.5),
+        -1px 0 rgba(255, 255, 255, 0.5),
+        0 -1px rgba(255, 255, 255, 0.5);
+    --watermark-stroke: 1px rgba(255, 255, 255, 0.5);
 
-  --heart-contour-color: rgba(0, 0, 0, 1);
-  --heart-fill-color: rgba(255, 0, 0, 1);
+    --button-font-size: 14px;
+    --button-text-color: rgba(255, 255, 255, 1);
+    --button-color: rgba(255, 255, 255, 1);
+
+    --heart-contour-color: rgba(0, 0, 0, 1);
+    --heart-fill-color: rgba(255, 0, 0, 1);
 }

@@ -20,10 +20,10 @@
   font-size: var(--body-font-size, 18px);
   line-height: var(--line-height, 21px);
   background-color: var(--bg-color, rgba(255, 255, 255, 1));
-  background-image: var(--bg-image, 
-  repeating-linear-gradient(#d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
-  repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
-  linear-gradient(#e7e7e7 0, #e7e7e7 0,01%, #1a1a1a));
+  background-image: var(--bg-image,
+      repeating-linear-gradient(#d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+      repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+      linear-gradient(#e7e7e7 0, #e7e7e7 0, 01%, #1a1a1a));
   background-size: cover;
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -103,9 +103,9 @@
   line-height: 100%;
   text-transform: uppercase;
   text-shadow: var(--watermark-shadow, 1px 0 rgba(255, 255, 255, 0.5),
-  0 1px rgba(255, 255, 255, 0.5),
-  -1px 0 rgba(255, 255, 255, 0.5),
-  0 -1px rgba(255, 255, 255, 0.5));
+      0 1px rgba(255, 255, 255, 0.5),
+      -1px 0 rgba(255, 255, 255, 0.5),
+      0 -1px rgba(255, 255, 255, 0.5));
 }
 
 @supports((text-stroke: 1px rgba(255, 255, 255, 0.5)) or (-webkit-text-stroke: 1px rgba(255, 255, 255, 0.5))) {
@@ -114,7 +114,7 @@
     -webkit-text-stroke: var(--watermark-stroke, 1px rgba(255, 255, 255, 0.5));
     text-stroke: var(--watermark-stroke, 1px rgba(255, 255, 255, 0.5));
   }
-} 
+}
 
 .card__image {
   object-fit: cover;
@@ -124,7 +124,7 @@
 }
 
 .filter-sepia {
-    filter: sepia(80%);
+  filter: sepia(80%);
 }
 
 .filter-contrast {
@@ -186,11 +186,11 @@
 }
 
 .card__container-buttons {
- display: flex;
- justify-content: flex-end;
- gap: 5px;
- margin-inline-end: 25px;
- margin-block-end: 25px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-inline-end: 25px;
+  margin-block-end: 25px;
 }
 
 .card__icon-button {
@@ -210,7 +210,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform:translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .card__like-button {
@@ -342,4 +342,3 @@ dialog[open] {
   fill: var(--heart-fill-color, rgba(255, 0, 0, 1));
   transition: fill 0.3s linear 0.06s;
 }
-
