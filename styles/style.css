@@ -12,6 +12,26 @@
 
 */
 
+@keyframes scale {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 1.25;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -346,4 +366,65 @@ dialog[open] {
   max-inline-size: 100%;
   grid-row-start: 2;
   grid-column: span 2;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.core {
+  transition: fill 0.3s linear 0.03s;
+}
+
+.contour {
+  fill: var(--heart-contour-color, rgba(0, 0, 0, 1));
+  transition: fill 0.1s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--heart-contour-color, rgba(0, 0, 0, 1));
+  transition: fill 0.3s linear;
+}
+
+.main-body {
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--heart-contour-color, rgba(0, 0, 0, 1));
+  transition: fill 0.3s linear 0.05s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--heart-fill-color, rgba(255, 0, 0, 1));
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--heart-fill-color, rgba(255, 0, 0, 1));
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart-fill-color, rgba(255, 0, 0, 1));
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-fill-color, rgba(255, 0, 0, 1));
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-fill-color, rgba(255, 0, 0, 1));
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation: scale 0.3s ease-in 0.1s;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .sparks {
+  animation: opacity 0.3s ease-in 0.3s
 }
