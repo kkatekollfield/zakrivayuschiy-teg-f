@@ -506,7 +506,7 @@
       onclick="window['dialog-id'].showModal()" 
       aria-controls="dialog-id"
       >
-        <svg class="floppy-icon">
+        <svg class="floppy-icon" xmlns="http://www.w3.org/2000/svg">
           <use href="./svg/floppy.svg#floppy-icon"></use>
         </svg>
         <span class="button__text">
@@ -514,7 +514,7 @@
         </span>
       </button>
       <dialog id="dialog-id">
-        <svg class="floppy-icon-dialog">
+        <svg class="floppy-icon-dialog" xmlns="http://www.w3.org/2000/svg">
           <use href="./svg/floppy.svg#floppy-icon"></use>
         </svg>
         <span class="dialog-text">
@@ -525,6 +525,9 @@
         class="button dialog-close-button"
         onclick="window['dialog-id'].close();"
         >
+          <span class="visually-hidden">
+            Закрыть окно
+          </span>
           <span class="button__text">
             Ок
           </span>
