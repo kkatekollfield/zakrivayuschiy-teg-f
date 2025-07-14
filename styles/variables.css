@@ -33,4 +33,6 @@
 
     --heart-contour-color: rgba(0, 0, 0, 1);
     --heart-fill-color: rgba(255, 0, 0, 1);
+
+    --dialog-font-size: 14px;
 }

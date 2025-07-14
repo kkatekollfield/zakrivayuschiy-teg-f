@@ -267,12 +267,14 @@ dialog[open] {
   grid-template-rows: 2;
   row-gap: 30px;
   column-gap: 20px;
+  padding-inline: clamp(2.5rem, 2.7201rem - 0.939vw, 1.875rem);
   padding-block: 30px;
 }
 
 .floppy-icon-dialog {
   grid-column-start: 1;
   grid-row-start: 1;
+  align-self: center;
   inline-size: 39px;
   block-size: 39px;
 }
@@ -281,7 +283,8 @@ dialog[open] {
   grid-column-start: 2;
   grid-row-start: 1;
   font-family: var(--accent-font, fantasy);
-  line-height: 115%;
+  font-size: var(--dialog-font-size, 14px);
+  line-height: 150%;
   text-transform: uppercase;
 }
 
