@@ -158,6 +158,7 @@
   font-family: var(--accent-font, serif);
   font-size: var(--button-font-size, 14px);
   background-color: var(--button-color, rgba(255, 255, 255, 1));
+  transition: box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -173,7 +174,6 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px var(--accent-color, rgba(0, 0, 0, 1));
-  transition: box-shadow 0.3s ease;
 }
 
 .button:hover::before {
@@ -198,13 +198,13 @@
   position: relative;
   display: flex;
   border: 2px solid transparent;
+  transition: border 0.3s ease;
   cursor: pointer;
   min-inline-size: 40px;
 }
 
 .card__icon-button:focus-visible {
   border: 2px solid var(--accent-color, rgba(0, 0, 0, 1));
-  transition: border 0.3s ease;
 }
 
 .like-icon {
