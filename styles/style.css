@@ -21,9 +21,9 @@
   line-height: var(--line-height, 21px);
   background-color: var(--bg-color, rgba(255, 255, 255, 1));
   background-image: var(--bg-image,
-      repeating-linear-gradient(#d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
-      repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
-      linear-gradient(#e7e7e7 0, #e7e7e7 0, 01%, #1a1a1a));
+      repeating-linear-gradient(#d3d3d3 0, #d3d3d3 4px, transparent 4px, transparent 8px),
+      repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 4px, transparent 4px, transparent 8px),
+      linear-gradient(#e7e7e7 0, #e7e7e7 0, 05%, #636363));
   background-size: cover;
   min-inline-size: 320px;
   min-block-size: 100dvb;
