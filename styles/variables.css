@@ -17,7 +17,7 @@
     --font-weight-main: 400;
     --font-weight-title: 700;
 
-    --card-width: 100%;
+    --card-width: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
     --card-color: rgba(255, 255, 255, 1);
 
     --watermark-font-size: 14px;

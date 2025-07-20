@@ -39,12 +39,18 @@
   flex-direction: column;
   border: 2px solid var(--border-color, rgba(0, 0, 0, 1));
   background-color: var(--card-color, rgba(255, 255, 255, 1));
-  inline-size: clamp(375px, var(--card-width, 100%), 700px);
+  /* inline-size: clamp(375px, var(--card-width, 100%), 700px); */
+  inline-size: var(--card-width, clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem));
+}
+
+@media (width <=600px) {
+  .card {
+  inline-size: 100%;
+}
 }
 
 .header__logo {
   margin: 0 auto;
-  padding-inline: clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
   padding-block-start: clamp(7.5rem, 7.346rem + 0.6573vw, 7.9375rem);
   font-family: var(--accent-font, fantasy);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
@@ -54,7 +60,6 @@
 
 .header__text {
   margin: 0 auto;
-  padding-inline: clamp(5.03125rem, 2.9406rem + 8.9202vw, 10.96875rem);
   padding-block-start: 20px;
   padding-block-end: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
   font-family: var(--accent-font, fantasy);
@@ -242,7 +247,7 @@
   mix-blend-mode: difference;
 }
 
-@media (width <=768px) {
+@media (width <=600px) {
   .save-button {
     flex-direction: column;
     inline-size: 306px;
